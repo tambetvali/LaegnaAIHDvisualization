@@ -1,3 +1,5 @@
+This website introduction is based on the same content, by lovable.dev web app generator: [Origins of an AI](https://chem-visions-ai.lovable.app/).
+
 # 🌌 **Introduction**  
 ### *Where Machine Learning Meets Chemistry, Myth, and Imagination*
 
