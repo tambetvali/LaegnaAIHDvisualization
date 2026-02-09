@@ -1,3 +1,5 @@
+This website introduction is based on the same content, by lovable.dev web app generator: [Evolution of an AI](https://mind-spark-visions.lovable.app/).
+
 # 🌟 Introduction  
 *Laegna AI High‑Dimensional Visualization — Foundations & Orientation*
 
