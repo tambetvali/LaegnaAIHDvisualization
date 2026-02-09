@@ -750,13 +750,28 @@ We can imagine **three parallel molecules** (S, M, L) running the same 5 frames,
 ## 6.1 Parallel Molecules Diagram
 
 ```mermaid
+%%{init: {'theme':'default', 'themeVariables': {
+    'primaryColor': '#eef7ff',
+    'lineColor': '#336699',
+    'fontSize': '14px',
+    'nodeTextColor': '#003366'
+}}}%%
+
 graph TD
+
+    %% --- Small Model ---
     subgraph S[Small GPT — 1 Layer]
+    direction LR
         S_IN[In] --> S_L[Layer S]
         S_L --> S_OU[Ou]
     end
 
+    %% Spacer
+    S -->|parallel| M
+
+    %% --- Medium Model ---
     subgraph M[Medium GPT — 4 Layers]
+    direction LR
         M_IN[In] --> M_L1[Layer 1]
         M_L1 --> M_L2[Layer 2]
         M_L2 --> M_L3[Layer 3]
@@ -764,19 +779,24 @@ graph TD
         M_L4 --> M_OU[Ou]
     end
 
+    %% Spacer
+    M -->|parallel| L
+
+    %% --- Large Model ---
     subgraph L[Large GPT — 12 Layers]
-        L_IN[In] --> L_L1[Layer 1]
-        L_L1 --> L_L2
-        L_L2 --> L_L3
-        L_L3 --> L_L4
-        L_L4 --> L_L5
-        L_L5 --> L_L6
-        L_L6 --> L_L7
-        L_L7 --> L_L8
-        L_L8 --> L_L9
-        L_L9 --> L_L10
-        L_L10 --> L_L11
-        L_L11 --> L_L12
+    direction LR
+        L_IN[In] --> L_L1[1]
+        L_L1 --> L_L2[2]
+        L_L2 --> L_L3[3]
+        L_L3 --> L_L4[4]
+        L_L4 --> L_L5[5]
+        L_L5 --> L_L6[6]
+        L_L6 --> L_L7[7]
+        L_L7 --> L_L8[8]
+        L_L8 --> L_L9[9]
+        L_L9 --> L_L10[10]
+        L_L10 --> L_L11[11]
+        L_L11 --> L_L12[12]
         L_L12 --> L_OU[Ou]
     end
 ```
