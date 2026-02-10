@@ -1,17 +1,23 @@
-Notice the topics here are not my maximum quality as I follow agile process and this was simply a *neccessity* to have these basics here: not to
+***Draft warning***:
+
+*Notice the topics* here are **not my maximum quality** as I follow *agile **process*** and this was simply a *neccessity* to have these basics here: not to
 cover the topics completely, but rather to allow any reader to move on with complete, holistic plan when I work on rational details, which are *next*
 in the list. This is possible that you will find this folder rewritten, organized and fine-tuned, but when it's very critical that all the visualization
 math is covered with nice, readable texts, before I work on more mundane things: it's not very critical to make the texts truly consistent and
 to take care of all the parts - for *genuine* - and not necessarily genius - reader of me, the topics are all mentioned, human-readable intros
 given, and you will know the historic names, math branches and a couple of examples: otherwise, you have to tolerate the format in this folder.
 
-Agile, iterative strategy: to move on with holistic coverage, coverage of each part of the whole; sometimes agile development expects *base minimum*
+**Agile, iterative strategy**: to ***move on*** with holistic coverage, coverage of each part of the whole; sometimes agile development expects *base minimum*
 into the classes, which appear with such scope. This 1-day work of this text is the bare mimimum; and agile simply halts it when the day ends.
+
+---
 
 Text itself, which introduces this chapter:
 - [🧠 Rethinking Brain Technology](https://github.com/tambetvali/LaegnaAIHDvisualization/blob/main/Creativity/mMRImockMRI.md) - mMRI
 - When I say I introduce: indeed, I try to cover all the topic in technical text and avoid that the future brings me surprises; if you use any
   other materials, you should already on the way and you won't miss the basic points.
+
+---
 
 # 🧠 Introduction: Virtual Neuro‑Measurement in One Page
 
