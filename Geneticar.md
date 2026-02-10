@@ -88,5 +88,7 @@ Subquantum time:
   trained roles or tendencies. Left alone, they utilize each of this, like both having some of the both chromosomes - and the chromosomes, they are similar and might behave the same,
   sometimes for some reasons.
 
+> Atomic feminism and mascunism of X and Y chromosomes :)
+
 Atom is a dot field
 - 
