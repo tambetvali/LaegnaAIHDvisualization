@@ -1,4 +1,4 @@
-***Draft warning***:
+***Draft warning*** (only for you to stay ahead of time, as mine does not reflect the sole potential of civilization: you need to move on):
 
 *Notice the topics* here are **not my maximum quality** as I follow *agile **process*** and this was simply a *neccessity* to have these basics here: not to
 cover the topics completely, but rather to allow any reader to move on with complete, holistic plan when I work on rational details, which are *next*
