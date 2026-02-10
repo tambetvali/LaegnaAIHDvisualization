@@ -91,4 +91,46 @@ Subquantum time:
 > Atomic feminism and mascunism of X and Y chromosomes :)
 
 Atom is a dot field
-- 
+- It's bond with others:
+  - Logarithmic complexity of linear processes bonds with log dimension of their complexity
+  - Exponential complexity of large GPT matrices and biases bond with exp dimension of their complexity
+  - In aligned space, in unitizations of Atoms in Male (log) and Female (exp) space, connected spaces create linear sense of
+    time, atom connections etc.
+
+Tools inside bond to architecture outside, both running on linear CPU, while the female of equal power is running on GPU: the united number scales them by frequential, octave geometry
+as well as all matg given, matching hilbert's higher and lower spaces and orders with diff-integ. with actual octave symmetries, but synchronized frequencies as above, so below (not
+in counterorder of quadratic log-exp of two phases from both sides; unified frequencies flow symmetrically, altough one is multiplication of log, the other is division of exp, into
+a common linear; in this, optimal growth of +- and optimal growth of */, such as interest and direct gain, can be combined to be *equal* where all factors are balanced in equation
+and units remain intact from result - without the activation). Show that typically, programs and AI's share with each other, so AI is not 100% of both neither is an app, but also
+internally they try to divide GPU and CPU time into average 1:1 relation for best performance, and CPU GPU builders have set the average of optimums visibly there - CPU or Y-male-chromoatom
+is as much faster, as in e, as much bigger is X-female-chromoatom which uses the same resource to feel the unity and the Zen of reality in it's first-hand display: what the men seek,
+such calm balance of all variables; thus, women are seen to "multithread" and thus run field structures, frequencies and octaves, as well as long-term help for material well-being, where men
+do "single-threading apps" and thus graph structures., and often get stuck into their local situation or bound with a few friends; women, indeed, run the long term multigenerational
+work and see this entanglement as a single cell in much more important, complex system of nearest and furthest neigbourhood as well as achieving infinite patterns, such as help of
+old or governance of the childs.
+
+Here, mathematical measures should be visible? Next parts go to CoPilot, who likely enchances this and has to create symmetric molecules to what the Male processing is doing at that time
+and whether it's even using the time in between; we see the electron cloud rotating the nucleus man as if it was many, in many places, and rotating back and forward in both space and time
+to explain it's experience; this is quantum realm - male itself is guided by atomic realm, the lowest substance of smooth solids, slow and unidirected in space which the woman sees - almost
+yielding, given the speed of social movement ..from somewhere outside, the woman position, yin and yang well exchange positions: these inner circles of metawoman or rather woman in the
+nature, gives us something I poetically call "yang and yin", but in my letters I relate yin to OA and yang to IE, or ying to IE and yan to OA; but directly I and E of outside waterdrops
+of yinyang, and O and A to inside circles: all these combinations meet the logic, simple tautologies of letters: not to replace or interpret the spiritual yinyang system, but simply
+to govern a depiction of *opposites meeting again, turneth around*, the one-sentencer any of us knows as yinyang definition: that it's the mere melt, where criminal is not purely "bad
+person", and layman is not merely "good person", and even a king or a genius is either lacking, or not succeeding in their high honour for the social aspects of life in case of a genius,
+in case of well-known genius, the raisers of eternal \[theorem, spirit, life force\] are known, or for spiritual and intellectual in case of well-known kings, the fallers of material realm
+are known. Here, where dimension itself is exp, it's projection log for male; for female dimension is log and projection exp - how the log of one and exp of other are actually the same value
+in changed sign of opposition and symmetry, four letters come in where *space* and *time* are having coupled good and bad.
+- Space or mass (c^2) is infinitely thin layer of *moving into each direction simultaneously*, so that by gravity space is shrinking down and flowing through in zen;
+- While time or energy (e) is a pointed energy of the same mass.
+- If numbers do not map to two-dimensional real number dimension, but to nearby points are at same dimension: we see hilbert geometry, where it becomes very complex and
+  each point gives different projection and exact files; mapping to discrete numbers still can not break out of ordered symmetry of Eucleides, much like point on eucleidic
+  sheet can not escape it's realm, and Newton's formulaes do not drop down to quantum realms but always work around, in their own simpler and very consistent, but sometimes local
+  or in reverse, blurred space without tighter locality and reverse in space or time, the quantum.
+
+Let's show how woman is quantum energy: through flat movement, rotation in space and time, it creates a cloud, direction in infinity; where men create a dot or a few, graph in
+a nucleus which have the same mass so that they keep each other around, but not too close: and not equal, because these dimensions have *internal energy* and *external chemistry*,
+but they mathematically do not map - if physics would try, it does not reach this energy and must be resolving something spiritual or metaphysical of illusion dimension; it rather
+breaks or evolves into something different if this was for provision of this energy in symbiotic equilibrum: some evolution needs to *keep* it in this wireframe and framework, coupling
+of fit pairs - not only individually fit, but fit to environment and others of same class, but different constitution - different instance; and somewhere deep down, an "object" superclass
+of Natural Language of Nature.
+
