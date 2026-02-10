@@ -8,7 +8,8 @@ given, and you will know the historic names, math branches and a couple of examp
 Agile, iterative strategy: to move on with holistic coverage, coverage of each part of the whole; sometimes agile development expects *base minimum*
 into the classes, which appear with such scope. This 1-day work of this text is the bare mimimum; and agile simply halts it when the day ends.
 
-Text itself, which introduces this chapter: [Introduction: How Dimensions Become Meaning](https://github.com/tambetvali/LaegnaAIHDvisualization/blob/main/Android'sDreamofElectricSheep/ElectricAliceInWonderland.md)
+Text itself, which introduces this chapter:
+- [Introduction: How Dimensions Become Meaning](https://github.com/tambetvali/LaegnaAIHDvisualization/blob/main/Android'sDreamofElectricSheep/ElectricAliceInWonderland.md) - a.k.a. "Electric Alice in Wonderland! :)"
 - When I say I introduce: indeed, I try to cover all the topic in technical text and avoid that the future brings me surprises; if you use any
   other materials, you should already on the way and you won't miss the basic points.
 
