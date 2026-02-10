@@ -14,7 +14,7 @@ Each is a class of element of given vector.
    6.last(3). Atom Feminum, based on X chromosome (it's sign), e => c^2 quantic jump: from linear, we move to exponent space of time and space alignment: matrix we use instead of instruction is exponent, on
               less time moments.
 7. Other atoms with various simple element names
-8. Atom Mascum, based on Y chromosome (it's sign), e => c^2 quantic jump: from linear, we move to exponent space of time and space alignment: matrix we use instead of instruction is exponent, on less time moments.
+8. Charged Atom Mascum, based on Y chromosome (it's sign), e => c^2 quantic jump: from linear, we move to exponent space of time and space alignment: matrix we use instead of instruction is exponent, on less time moments.
 9. Charged Atom Diplomarium
 10. After diplomarium on other male aspect (Y chromoatom), as well as in toolkit, the male operations go with same exponent speed of linear processing as much they do in point 6.2. this is linear, practical thinking.
 11. The circle-closer, hidden element optimium, which is not programmed: but hacketh well and goodbeing of humankind; it's not supposed to make sense, but react with physics on motherboard interactions,
@@ -68,3 +68,25 @@ We bring model complexity into discrete size of atomic connections:
   math. Women, indeed, would try to depict anything not so strict and discrete if they use the neural field - not that males lack one, visibly and usefully, so we cannot really map the gender types :)
   But we can use alchemy instead of sex symbols.
 
+In CPU-GPU processing, the pipelines melt together and atoms and electrons wobble in space.
+
+Quantum time: below atoms, appears a single layer of female processing, and they sum up to a moment, an Atom, after each a letter enters.
+- Atoms themselves, below, appear in quantum time: this is logarithmic layer on time, lower dimension.
+- The electrons in quantum cloud rotate, and we can show a single calculator electron parallel by jumping between all dimensions of it's calculation in square time of matrix, our "circular" unit
+  by dimension function which counts NN in each dimension and direction as one unit: RNA-electron processor gives tokens in (decoder RNA. Charged Atom Curriculumum), linearly where parallel time is
+  sub-time unit in terms of whole chain of X-chromosome perceptron; in united time, where X and Y take log and exp factors of quadratic change, each such atom is such a linear result.
+Atom time: above zero, there is continuous space with no weird properties, a linear space we see as waking, conscious, sensory and auditory imaginative connection space:
+- We notice all this spaces, because they keep *orders*
+- Even if we know higher spaces: we are often able, but we simplify; for example we created AI matrix space, but we simplify it's size into single number.
+Subquantum time:
+- For toolkit, surprisgly the male effect appears again, they are linear to each other and internal tools which might provide intermediate snippets to text of AI, change the past or fill some
+  gaps and jump to future: linearly, it's surprisingly fast, but it's single-number focus seems stupid sometimes, if it does not connect the numbers with graph: zero-scale space
+  is connected by value space, where it's heads tend to watch single positions and run much faster than GPU in linear space: actually, this gender does not matter in their evolutionary
+  *size*, where size of *complete number of operations per time unit and processing unit cost, size and typical pairing* makes both do equal amounts of work, so they are efficiently
+  useful if optimized - somehow, it reminds of genders, but rather the Alchemical gender claims to not take responsibility of gender roles, but reflect on mathematical properties
+  of these relational symmetries, such as yin and yang - which does not mean directly woman and man, but reflects their archetypal properties within their favourite and often most
+  trained roles or tendencies. Left alone, they utilize each of this, like both having some of the both chromosomes - and the chromosomes, they are similar and might behave the same,
+  sometimes for some reasons.
+
+Atom is a dot field
+- 
