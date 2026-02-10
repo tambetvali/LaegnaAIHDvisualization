@@ -1,3 +1,7 @@
+## Introduction
+
+In this mock‑physics framework, every computational element of a transformer is treated as an atom, every tensor flow as a bond, and every layer as a molecule. The architecture becomes a periodic table of interacting units whose behavior follows structural rules rather than physical laws. By expressing GPT layers, reactions, and thermodynamic quantities in this symbolic chemistry, we obtain a compact language for describing complexity, stability, and efficiency across the entire model. This introduction establishes the conceptual ground on which the molecular diagrams, reaction tables, and thermodynamic equations operate.
+
 # The structure of GPT molecule
 
 Each is a class of element of given vector.
@@ -134,3 +138,803 @@ breaks or evolves into something different if this was for provision of this ene
 of fit pairs - not only individually fit, but fit to environment and others of same class, but different constitution - different instance; and somewhere deep down, an "object" superclass
 of Natural Language of Nature.
 
+# Unified Mock‑Physics Glossary  
+### (CPU log‑conversion atoms + GPU exp‑field atoms + 4‑direction architecture)
+
+---
+
+## 1. Overview
+
+This framework models GPT computation as a **mock chemistry**:
+
+- **GPU atoms** (exp‑parallel): Cu, Fe, C1, C2, Se, Mu  
+- **CPU atoms** (log‑linear): Ma, Lc, Rt, Up, Bk, Tm, Di  
+- **Emergent atoms**: Op, Rn, Qt, Sp, Fr  
+
+Training + inference operate in **4 directions**:
+
+1. **In → Model** (token enters)
+2. **Model → Out** (logits leave)
+3. **Out → Model** (backflow / gradient / correction)
+4. **Model → In** (optimizer / state update)
+
+---
+
+## 2. Glossary (2–3 letter symbols)
+
+### 2.1 GPU / exp‑field atoms
+
+| Symbol | Name          | Meaning |
+|-------|---------------|---------|
+| **Cu** | Curriculumum | Core tensor atom: $y = Wx + b$ |
+| **Fe** | Feminum      | Exp‑parallel field atom (attention/MLP) |
+| **C1** | Circulum‑1   | Local attention loop |
+| **C2** | Circulum‑2   | Non‑local attention loop |
+| **Se** | Sensorum     | Input embedding |
+| **Mu** | Musculum     | Output/logit projection |
+
+### 2.2 CPU / log‑conversion atoms
+
+| Symbol | Name | Meaning |
+|--------|------|---------|
+| **Ma** | Mascum | Linear control atom (routing, scheduling) |
+| **Lc** | Log‑Convertor | Converts tensors to CPU‑processable graph states |
+| **Rt** | Router | Directs token streams in 4 directions |
+| **Up** | Updater | Applies optimizer/state updates |
+| **Bk** | Backflow | Reverse‑direction signal handler |
+| **Tm** | Toolmnium | Tool interface atom |
+| **Di** | Diplomarium | Arbitration/coordination atom |
+
+### 2.3 Extended atoms
+
+| Symbol | Name | Meaning |
+|--------|------|---------|
+| **Op** | Optimium | Emergent optimization atom |
+| **Rn** | Randiunum | Randomness/sampling |
+| **Qt** | Quantumum | Sub‑atomic micro‑kernel |
+| **Sp** | Spatium | Tensor layout/sharding |
+| **Fr** | Fourierum | Frequency/octave transforms |
+
+---
+
+## 3. CPU–GPU Unified Flow (4‑direction architecture)
+
+```mermaid
+flowchart LR
+    IN((Token In))
+    LC1[Log-Convertor Lc]
+    SE[Se: Sensorum]
+    FE[Fe: Feminum Field]
+    CU[Cu: Tensor Atom]
+    MU[Mu: Musculum]
+    LC2[Log-Convertor Lc]
+    OUT((Logits Out))
+
+    IN --> LC1 --> SE --> FE --> CU --> MU --> LC2 --> OUT
+
+    %% Backflow
+    OUT -->|D3 Out→Model| Bk[Backflow Bk] --> FE
+    FE -->|D4 Model→In| Up[Updater Up] --> SE
+```
+
+---
+
+## 4. Mathematical definitions
+
+### 4.1 Atom cost
+
+- Cu atom  
+  $$C_{\text{Cu}} = d_{\text{in}} d_{\text{out}}$$
+
+- Fe atom  
+  $$C_{\text{Fe}} = k_{\text{Fe}} d^2$$
+
+- Ma atom  
+  $$C_{\text{Ma}} = k_{\text{Ma}} n_{\text{ops}}$$
+
+### 4.2 Atom radius and electron cloud
+
+- Radius  
+  $$r_X = \sqrt{\text{input dim} \cdot \text{output dim}}$$
+
+- Electron cloud  
+  $$e_X = \text{activation dimension}$$
+
+### 4.3 Octave index
+
+- Frequency  
+  $$f_X = \frac{1}{C_X}$$
+
+- Octave  
+  $$o_X = \log_2\left(\frac{f_X}{f_0}\right)$$
+
+---
+
+## 5. Life‑cycle (sequence)
+
+```mermaid
+sequenceDiagram
+    participant CPU as CPU (Ma, Lc, Rt)
+    participant GPU as GPU (Fe, Cu, C1, C2)
+    participant OUT as Output/Backflow
+
+    CPU->>GPU: D1 In→Model
+    GPU->>GPU: Field ops
+    GPU->>CPU: D2 Model→Out
+    CPU->>OUT: Emit logits
+
+    OUT->>CPU: D3 Out→Model
+    CPU->>GPU: D4 Model→In
+```
+
+---
+
+## 6. Roles (class diagram)
+
+```mermaid
+classDiagram
+    class Cu {
+        +tensor_op()
+        radius r_Cu
+        cloud e_Cu
+    }
+
+    class Fe {
+        +parallel_field()
+        +attention()
+    }
+
+    class Ma {
+        +route()
+        +schedule()
+        +tool_logic()
+    }
+
+    class Lc {
+        +log_convert()
+        +shape_reduce()
+    }
+
+    Cu <|-- Fe
+    Ma <|-- Lc
+```
+
+---
+
+## 7. Critical code snippets (escaped fences)
+
+### 7.1 CPU log‑conversion
+
+```python
+def log_convert(tensor):
+    return torch.sign(tensor) * torch.log1p(tensor.abs())
+```
+
+### 7.2 GPU tensor atom
+
+```python
+def cu_atom(W, x, b):
+    return W @ x + b
+```
+
+---
+
+## 8. Notes on “mock physics”
+
+This is **not** physical chemistry.  
+It is a **structural metaphor** for tensor computation:
+
+- atoms → compute units  
+- bonds → dataflow edges  
+- electron clouds → activation vectors  
+- fields → tensor spaces  
+- octaves → scaling regimes  
+
+It is interpretive, not predictive.
+
+# Periodic Table of Mock‑Physics AI Atoms  
+### (Atomic Numbers • Valence • Bond Rules • Escaped Mermaid)
+
+---
+
+## 0. Ordering Principle
+
+Atomic numbers increase with **computational depth**:
+
+1–4: quantum/sub‑atomic  
+5–20: GPU exp‑field atoms  
+21–40: CPU log‑conversion atoms  
+41–50: emergent/meta atoms  
+
+Valence = number of **stable bonds** an atom forms in the computation graph.
+
+Bond rules describe **legal edges** in the tensor‑flow DAG.
+
+---
+
+## 1. Full Periodic Table
+
+### 1.1 Quantum / Sub‑Atomic Tier (1–4)
+
+| # | Symbol | Name        | Valence | Meaning |
+|---|--------|-------------|---------|---------|
+| 1 | **Qt** | Quantumum   | 2 | Micro‑kernel step; smallest schedulable unit |
+| 2 | **Rn** | Randiunum   | 1 | Randomness/sampling injection |
+| 3 | **Sp** | Spatium     | 2 | Tensor layout/sharding atom |
+| 4 | **Fr** | Fourierum   | 2 | Frequency/octave transform |
+
+**Bond rules:**  
+- Qt bonds only to Cu or Fe.  
+- Rn bonds only to Cu or Mu.  
+- Sp bonds to any GPU atom.  
+- Fr bonds to Fe, C1, C2.
+
+---
+
+### 1.2 GPU / Exp‑Field Tier (5–20)
+
+| # | Symbol | Name          | Valence | Meaning |
+|---|--------|---------------|---------|---------|
+| 5  | **Cu** | Curriculumum | 3 | Core tensor op $y = Wx + b$ |
+| 6  | **Fe** | Feminum      | 4 | Parallel field block (attention/MLP) |
+| 7  | **C1** | Circulum‑1   | 2 | Local attention loop |
+| 8  | **C2** | Circulum‑2   | 3 | Non‑local attention loop |
+| 9  | **Se** | Sensorum     | 1 | Input embedding |
+| 10 | **Mu** | Musculum     | 1 | Output/logit projection |
+| 11 | **Ax** | Axonium      | 2 | Activation nonlinearity |
+| 12 | **Dr** | Dropoutium   | 1 | Stochastic masking |
+| 13 | **Nm** | Normium      | 2 | LayerNorm atom |
+| 14 | **Sh** | Shardium     | 2 | Tensor partitioning |
+| 15 | **Ag** | Aggregatum   | 3 | Multi‑head aggregation |
+| 16 | **Br** | Branchium    | 2 | Residual branch |
+| 17 | **Rs** | Residuum     | 2 | Residual sum |
+| 18 | **Pk** | Packium      | 2 | Token packing |
+| 19 | **Up** | Upcastium    | 1 | Precision upcast |
+| 20 | **Dn** | Downcastium  | 1 | Precision downcast |
+
+**Bond rules:**  
+- Se → Fe → Cu → Mu is the canonical chain.  
+- C1/C2 may only bond to Fe or Cu.  
+- Normium (Nm) must bond *before* Cu or Fe.  
+- Residuum (Rs) bonds only between same‑dimension atoms.
+
+---
+
+### 1.3 CPU / Log‑Conversion Tier (21–40)
+
+| # | Symbol | Name | Valence | Meaning |
+|---|--------|------|---------|---------|
+| 21 | **Ma** | Mascum | 3 | Linear control atom |
+| 22 | **Lc** | Log‑Convertor | 2 | Tensor→graph conversion |
+| 23 | **Rt** | Router | 4 | Directs 4‑direction flow |
+| 24 | **Bk** | Backflow | 2 | Reverse‑signal handler |
+| 25 | **Up** | Updater | 2 | Optimizer update |
+| 26 | **Tm** | Toolmnium | 2 | Tool interface |
+| 27 | **Di** | Diplomarium | 3 | Arbitration/coordination |
+| 28 | **Md** | Mediator | 2 | CPU–GPU handshake |
+| 29 | **St** | Stateon | 1 | Persistent state atom |
+| 30 | **Ev** | Eventium | 1 | Event trigger |
+| 31 | **Sw** | Switchium | 2 | Conditional routing |
+| 32 | **Pr** | Processium | 2 | CPU process step |
+| 33 | **Th** | Threadium | 2 | Thread scheduling |
+| 34 | **Qe** | Queueon | 1 | Queue atom |
+| 35 | **Ms** | Messageon | 1 | Message passing |
+| 36 | **Io** | Ionius | 1 | IO boundary atom |
+| 37 | **Cl** | Clockium | 1 | Timing atom |
+| 38 | **Sm** | Semaphorium | 1 | Lock/sync atom |
+| 39 | **Cp** | Copyon | 1 | CPU copy atom |
+| 40 | **Rf** | Reflactium | 1 | Reflection/meta‑routing |
+
+**Bond rules:**  
+- Lc must bond between GPU and CPU atoms.  
+- Rt bonds to Se, Mu, Bk, Up.  
+- Tm bonds only to Ma or Rt.  
+- Di bonds to Ma, Tm, and Rt.
+
+---
+
+### 1.4 Emergent / Meta Tier (41–50)
+
+| # | Symbol | Name | Valence | Meaning |
+|---|--------|------|---------|---------|
+| 41 | **Op** | Optimium | 4 | Emergent optimization atom |
+| 42 | **Sy** | Syncronium | 3 | Global synchronizer |
+| 43 | **Hl** | Hologramium | 2 | High‑dimensional projection |
+| 44 | **Em** | Emergentia | 2 | Pattern‑forming atom |
+| 45 | **Co** | Cohortium | 3 | Multi‑module coherence |
+| 46 | **Re** | Resonatium | 2 | Frequency alignment |
+| 47 | **Fl** | Fluxium | 2 | Gradient flux atom |
+| 48 | **Mn** | Manifoldium | 2 | Embedding manifold atom |
+| 49 | **Cr** | Criticonium | 1 | Critical‑point detector |
+| 50 | **Ae** | Aetherium | 1 | Global latent field |
+
+**Bond rules:**  
+- Op may bond to any atom with matching dimension.  
+- Hl bonds only to Fe, C2, or Mn.  
+- Ae bonds to all atoms but forms no cycles.
+
+---
+
+## 2. Bond Rules (Global)
+
+### 2.1 Allowed bond types
+
+- **Tensor bond**: GPU→GPU  
+- **Graph bond**: CPU→CPU  
+- **Conversion bond**: GPU→CPU or CPU→GPU via Lc  
+- **Residual bond**: same‑dimension atoms only  
+- **Frequency bond**: atoms with compatible octave index  
+- **Precision bond**: Upcastium/Downcastium only
+
+### 2.2 Forbidden bonds
+
+- C1 cannot bond directly to Mu.  
+- Rn cannot bond to CPU atoms.  
+- Ae cannot form cycles.  
+- Sp cannot bond to Ma or Rt.  
+- Qt cannot bond to Di or Tm.
+
+---
+
+## 3. Periodic Table Diagram (escaped Mermaid)
+
+```mermaid
+graph TB
+    subgraph Quantum[Quantum Tier]
+        Qt((Qt))
+        Rn((Rn))
+        Sp((Sp))
+        Fr((Fr))
+    end
+
+    subgraph GPU[GPU Tier]
+        Se((Se))
+        Fe((Fe))
+        Cu((Cu))
+        C1((C1))
+        C2((C2))
+        Mu((Mu))
+    end
+
+    subgraph CPU[CPU Tier]
+        Ma((Ma))
+        Lc((Lc))
+        Rt((Rt))
+        Bk((Bk))
+        Up((Up))
+        Tm((Tm))
+        Di((Di))
+    end
+
+    subgraph Meta[Meta Tier]
+        Op((Op))
+        Hl((Hl))
+        Ae((Ae))
+    end
+
+    Se --> Fe --> Cu --> Mu
+    Fe --> C1
+    Fe --> C2
+    Cu --> Lc --> Ma --> Rt
+    Rt --> Bk
+    Rt --> Up
+    Ma --> Tm
+    Ma --> Di
+    Fe --> Hl
+    Op --> Fe
+    Op --> Ma
+    Ae -.-> Qt
+```
+
+---
+
+## 4. Valence Diagram (escaped Mermaid)
+
+```mermaid
+flowchart LR
+    Cu ---|3| Fe
+    Fe ---|4| C2
+    Ma ---|3| Rt
+    Rt ---|4| Bk
+    Op ---|4| Fe
+    Op ---|4| Ma
+```
+
+---
+
+## 5. Example Molecule: A GPT Layer
+
+```mermaid
+graph LR
+    Se --> Nm --> Fe --> Cu --> Rs --> Mu
+    Fe --> C1
+    Fe --> C2
+    Cu --> Ax
+    Ax --> Dr
+    Dr --> Rs
+```
+
+---
+
+## 6. Mathematical Valence Definition
+
+For an atom $X$:
+
+$$
+\text{valence}(X) = \left|\{\,Y \mid X \leftrightarrow Y \text{ is a stable bond}\,\}\right|
+$$
+
+A bond $X \leftrightarrow Y$ is stable iff:
+
+$$
+\dim(X) = \dim(Y) \quad\text{or}\quad Lc(X,Y)=1
+$$
+
+where $Lc$ is the log‑conversion operator.
+
+---
+
+## 7. Summary
+
+You now have:
+
+- A **50‑atom periodic table**  
+- Atomic numbers  
+- Valence  
+- Bond rules  
+- Escaped Mermaid diagrams  
+- Mathematical definitions  
+
+All in a clean, consistent mock‑physics framework.
+
+# Molecular Transformer Blocks, Reaction Table, and Mock Thermodynamics  
+### (Same fenced/escaped format, full mock‑physics layer chemistry)
+
+---
+
+> “Atom is a dot field — It’s bond with others: logarithmic complexity of linear processes bonds with log dimension of their complexity.”  
+> “Quantum time: below atoms, appears a single layer of female processing, and they sum up to a moment, an Atom, after each a letter enters.”
+
+---
+
+## 1. Molecular diagrams for transformer blocks
+
+### 1.1 Self‑attention block molecule
+
+Atoms used: Se, Nm, Fe, C1, C2, Cu, Rs, Br, Mu
+
+```mermaid
+graph LR
+    Se((Se)) --> Nm((Nm)) --> Fe((Fe))
+    Fe --> C1((C1))
+    Fe --> C2((C2))
+    Fe --> Cu((Cu))
+    Cu --> Br((Br))
+    Br --> Rs((Rs))
+    Rs --> Mu((Mu))
+```
+
+**Interpretation**
+
+- **Se → Nm → Fe**: input embedding, normalization, field setup.  
+- **Fe → C1/C2**: local and non‑local attention loops.  
+- **Fe → Cu → Br → Rs → Mu**: projection, residual branch, residual sum, output.
+
+---
+
+### 1.2 MLP block molecule
+
+Atoms used: Nm, Cu, Ax, Dr, Rs
+
+```mermaid
+graph LR
+    Nm((Nm)) --> Cu1((Cu))
+    Cu1 --> Ax((Ax))
+    Ax --> Dr((Dr))
+    Dr --> Cu2((Cu))
+    Cu2 --> Rs((Rs))
+```
+
+**Interpretation**
+
+- **Nm → Cu1**: normalized input to first linear.  
+- **Cu1 → Ax → Dr**: nonlinearity + dropout.  
+- **Dr → Cu2 → Rs**: second linear, residual merge.
+
+---
+
+### 1.3 Full transformer layer molecule (attention + MLP)
+
+```mermaid
+graph TB
+    subgraph Attn[Self-Attention Molecule]
+        SeA((Se)) --> NmA((Nm)) --> FeA((Fe))
+        FeA --> C1A((C1))
+        FeA --> C2A((C2))
+        FeA --> CuA((Cu))
+        CuA --> BrA((Br))
+        BrA --> RsA((Rs))
+    end
+
+    subgraph MLP[MLP Molecule]
+        NmM((Nm)) --> CuM1((Cu))
+        CuM1 --> AxM((Ax))
+        AxM --> DrM((Dr))
+        DrM --> CuM2((Cu))
+        CuM2 --> RsM((Rs))
+    end
+
+    RsA --> NmM
+    RsM --> Out((Layer Out))
+```
+
+---
+
+## 2. Reaction table: how atoms combine into layers
+
+We treat **layer construction** as **chemical reactions**:
+
+### 2.1 Basic reaction schema
+
+1. **Attention reaction**
+
+$$
+\text{Se} + \text{Nm} + \text{Fe} + \text{C1} + \text{C2} + \text{Cu} + \text{Br} + \text{Rs}
+\;\longrightarrow\;
+\text{AttnLayer}
+$$
+
+2. **MLP reaction**
+
+$$
+\text{Nm} + 2\text{Cu} + \text{Ax} + \text{Dr} + \text{Rs}
+\;\longrightarrow\;
+\text{MLPLayer}
+$$
+
+3. **Full transformer layer**
+
+$$
+\text{AttnLayer} + \text{MLPLayer}
+\;\longrightarrow\;
+\text{TrfLayer}
+$$
+
+### 2.2 Reaction table
+
+| Reaction ID | Reactants (atoms) | Product | Description |
+|-------------|-------------------|---------|-------------|
+| R1 | Se + Nm + Fe + C1 + C2 + Cu + Br + Rs | AttnLayer | Self‑attention block |
+| R2 | Nm + 2Cu + Ax + Dr + Rs | MLPLayer | Feed‑forward block |
+| R3 | AttnLayer + MLPLayer | TrfLayer | Full transformer layer |
+| R4 | TrfLayer + Rt + Lc | TrfLayer\_CPUAware | Layer with CPU routing hooks |
+| R5 | TrfLayer + Op + Hl | TrfLayer\_Emergent | Layer with emergent/meta behavior |
+
+---
+
+## 3. Mock thermodynamics: energy, entropy, free compute
+
+We define a **mock thermodynamic system** over atoms and layers.
+
+### 3.1 Energy
+
+Let $C_X$ be the compute cost of atom $X$ (e.g. FLOPs per token).
+
+- **Atomic energy**
+
+$$
+E_X = \alpha \, C_X
+$$
+
+where $\alpha$ is a scaling constant (e.g. Joules per FLOP).
+
+- **Layer energy**
+
+For a layer with atoms $X_1, \dots, X_n$:
+
+$$
+E_{\text{layer}} = \sum_{i=1}^n E_{X_i}
+$$
+
+### 3.2 Entropy
+
+Let $p_X$ be the **usage probability** of atom type $X$ in a large run (fraction of total atoms fired).
+
+- **Model entropy**
+
+$$
+S = - \sum_X p_X \log p_X
+$$
+
+High $S$ ⇒ diverse atom usage (rich architecture).  
+Low $S$ ⇒ few atom types dominate (simpler architecture).
+
+### 3.3 Free compute
+
+Define a **mock free compute** $F$ analogous to free energy:
+
+- Let $T$ be a **temperature‑like** parameter (tolerance for architectural complexity).  
+- Let $E$ be total energy, $S$ entropy.
+
+$$
+F = E - T S
+$$
+
+- Lower $F$ ⇒ more **efficient** architecture (good trade‑off between compute and structural richness).  
+- For a given target performance, we seek **architectures that minimize $F$**.
+
+### 3.4 Per‑layer free compute
+
+For layer $\ell$:
+
+$$
+F_\ell = E_\ell - T S_\ell
+$$
+
+where $E_\ell$ is layer energy and $S_\ell$ is entropy computed over atoms in that layer.
+
+---
+
+## 4. Thermodynamic “reactions”
+
+We can define **reaction feasibility** by $\Delta F$:
+
+- For reaction $R: A \rightarrow B$:
+
+$$
+\Delta F_R = F_B - F_A
+$$
+
+- If $\Delta F_R < 0$: reaction is **favorable** (architecture B is more efficient).  
+- If $\Delta F_R > 0$: reaction is **unfavorable** (architecture B is less efficient).
+
+Example:
+
+- **R3: AttnLayer + MLPLayer → TrfLayer**
+
+If combining them reduces redundant atoms and increases structural coherence:
+
+$$
+\Delta F_{R3} < 0
+$$
+
+so the **full transformer layer** is thermodynamically favored over separate blocks.
+
+---
+
+## 5. Thermodynamic diagram (Mermaid)
+
+```mermaid
+graph LR
+    A[AttnLayer] -->|R3| T[TrfLayer]
+    M[MLPLayer] -->|R3| T
+
+    A:::highE
+    M:::highE
+    T:::lowF
+
+    classDef highE fill:#ffcccc stroke:#ff0000 stroke-width:2px;
+    classDef lowF fill:#ccffcc stroke:#00aa00 stroke-width:2px;
+```
+
+---
+
+## 6. Summary
+
+- **Molecular diagrams** show how atoms form attention, MLP, and full transformer layers.  
+- The **reaction table** formalizes layer construction as chemical‑like reactions.  
+- **Mock thermodynamics** introduces $E$, $S$, and $F$ to reason about architectural efficiency and “reaction favorability” between designs.
+
+# Molecular Diagram of an Entire GPT Layer  
+### (Escaped Mermaid, same mock‑physics format)
+
+> “Atom is a dot field — It’s bond with others: logarithmic complexity of linear processes bonds with log dimension of their complexity.”  
+> “Quantum time: below atoms, appears a single layer of female processing, and they sum up to a moment, an Atom, after each a letter enters.”
+
+---
+
+## 1. GPT layer as a single molecule
+
+We treat a **full GPT layer** as one large molecule composed of:
+
+- **Input path:** Se → Nm  
+- **Self‑attention path:** Fe, C1, C2, Cu, Br, Rs  
+- **MLP path:** Nm, Cu, Ax, Dr, Rs  
+- **Residual backbone:** Rs connecting attention and MLP outputs  
+- **Optional CPU hooks:** Lc, Ma, Rt (for routing/monitoring)
+
+---
+
+## 2. Escaped Mermaid diagram: full GPT layer molecule
+
+```mermaid
+graph TB
+    %% Input and pre-norm
+    InTok((Token In)) --> Se((Se: Sensorum))
+    Se --> Nm1((Nm: Normium))
+
+    %% Attention sub-molecule
+    subgraph ATTN[Self-Attention Molecule]
+        Nm1 --> Fe((Fe: Feminum Field))
+        Fe --> C1((C1: Local Circulum))
+        Fe --> C2((C2: Nonlocal Circulum))
+        Fe --> CuA((Cu: Attn Projection))
+        CuA --> BrA((Br: Attn Branch))
+        BrA --> RsA((Rs: Attn Residual))
+    end
+
+    %% Residual backbone after attention
+    RsA --> Nm2((Nm: Post-Attn Norm))
+
+    %% MLP sub-molecule
+    subgraph MLP[MLP Molecule]
+        Nm2 --> CuM1((Cu: MLP In))
+        CuM1 --> Ax((Ax: Activation))
+        Ax --> Dr((Dr: Dropout))
+        Dr --> CuM2((Cu: MLP Out))
+        CuM2 --> BrM((Br: MLP Branch))
+        BrM --> RsM((Rs: MLP Residual))
+    end
+
+    %% Output
+    RsM --> OutTok((Layer Out))
+
+    %% Optional CPU hooks (log-conversion + routing)
+    RsM --> Lc((Lc: Log-Convertor))
+    Lc --> Ma((Ma: Mascum Control))
+    Ma --> Rt((Rt: Router))
+```
+
+---
+
+## 3. Layer “reaction” summary
+
+We can summarize the **GPT layer molecule** as a single reaction:
+
+$$
+\text{Se} + 2\text{Nm} + \text{Fe} + \text{C1} + \text{C2} + 3\text{Cu} + 2\text{Br} + 2\text{Rs} + \text{Ax} + \text{Dr}
+\;\longrightarrow\;
+\text{GPTLayer}
+$$
+
+Optionally, with CPU hooks:
+
+$$
+\text{GPTLayer} + \text{Lc} + \text{Ma} + \text{Rt}
+\;\longrightarrow\;
+\text{GPTLayer}_{\text{CPUAware}}
+$$
+
+---
+
+## 4. Thermodynamic view of the GPT layer
+
+- **Energy of the layer**
+
+$$
+E_{\text{GPTLayer}} = \sum_{X \in \{\text{Se,Nm,Fe,C1,C2,Cu,Br,Rs,Ax,Dr}\}} E_X
+$$
+
+- **Entropy of the layer**
+
+Let $p_X$ be the fraction of total atomic operations contributed by atom type $X$ in this layer:
+
+$$
+S_{\text{GPTLayer}} = - \sum_X p_X \log p_X
+$$
+
+- **Free compute**
+
+For a given architectural “temperature” $T$:
+
+$$
+F_{\text{GPTLayer}} = E_{\text{GPTLayer}} - T S_{\text{GPTLayer}}
+$$
+
+Lower $F_{\text{GPTLayer}}$ corresponds to a more **efficient** GPT layer molecule under this mock‑physics.
+
+---
+
+## 5. One‑sentence summary
+
+This diagram and math treat a **full GPT layer** as a single, coherent molecule of atoms (Se, Nm, Fe, C1, C2, Cu, Br, Rs, Ax, Dr, ±Lc, Ma, Rt), with structure, reactions, and thermodynamic‑style quantities all defined in the same mock‑chemistry language as before.
