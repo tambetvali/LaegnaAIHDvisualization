@@ -1,3 +1,5 @@
+This website introduction is based on the same content, by lovable.dev web app generator: [Surveillance of an AI](https://ai-jungle-viz.lovable.app).
+
 ## Introduction
 
 In this mock‑physics framework, every computational element of a transformer is treated as an atom, every tensor flow as a bond, and every layer as a molecule. The architecture becomes a periodic table of interacting units whose behavior follows structural rules rather than physical laws. By expressing GPT layers, reactions, and thermodynamic quantities in this symbolic chemistry, we obtain a compact language for describing complexity, stability, and efficiency across the entire model. This introduction establishes the conceptual ground on which the molecular diagrams, reaction tables, and thermodynamic equations operate.
